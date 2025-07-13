@@ -6,7 +6,7 @@ metadata:
 data:
   index.html: |
     <html>
-    <h1>Welcome</h1>
+    <h3>Welcome</h3>
     <br>
-    <h1>Hi! This is a configmap Index file</h1>
+    <h3>Hi! This is a configmap Index file</h3>
     </html>
