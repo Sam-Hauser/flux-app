@@ -18,7 +18,7 @@ spec:
     certmanager:
       install: false
     global:
-      edition: ce
+      edition: ee
       hosts:
         domain: samlab.example.com
         https: false
