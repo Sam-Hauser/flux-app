@@ -5,6 +5,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.provider: traefik
     meta.helm.sh/release-name: gitlab
+    meta.helm.sh/release-namespace: default
 spec:
   rules:
   - http:
