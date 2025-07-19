@@ -15,11 +15,14 @@ spec:
         name: gitlab
       interval: 10m
   values:
+    gitlab:
+      toolbox:
+        enabled: false
     certmanager:
       install: false
     global:
       minio:
-        enabled: true
+        enabled: false
       edition: ce
       hosts:
         domain: samlab.example.com
