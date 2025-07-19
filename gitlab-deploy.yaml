@@ -19,7 +19,7 @@ spec:
       install: false
     global:
       minio:
-        enabled: false
+        enabled: true
       edition: ce
       hosts:
         domain: samlab.example.com
