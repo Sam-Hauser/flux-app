@@ -6,10 +6,10 @@ metadata:
 spec:
   interval: 10m
   timeout: 5m
-  releaseName: gitlab/gitlab
+  releaseName:  gitlab
   chart:
     spec:
-      chart: gitlab/gitlab
+      chart: gitlab
       version: 9.2.0
       sourceRef:
         kind: HelmRepository
