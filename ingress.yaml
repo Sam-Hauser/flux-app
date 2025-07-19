@@ -1,29 +1,29 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: gitlab-test
-  labels:
-    app: webservice
-    app.kubernetes.io/managed-by: Helm
-    chart: webservice-9.2.0
-    gitlab.com/webservice-name: default
-    helm.toolkit.fluxcd.io/name: gitlab
-    helm.toolkit.fluxcd.io/namespace: default
-    heritage: Helm
-    release: gitlab
-  annotations:
-    kubernetes.io/ingress.provider: traefik
-    meta.helm.sh/release-name: gitlab
-    meta.helm.sh/release-namespace: default
-spec:
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: gitlab-webservice-default
-            port:
-              number: 8181
-    host: samlab2.example.com
+#apiVersion: networking.k8s.io/v1
+#kind: Ingress
+#metadata:
+#  name: gitlab-test
+#  labels:
+##    app: webservice
+#    app.kubernetes.io/managed-by: Helm
+#    chart: webservice-9.2.0
+#    gitlab.com/webservice-name: default
+#    helm.toolkit.fluxcd.io/name: gitlab
+#    helm.toolkit.fluxcd.io/namespace: default
+#    heritage: Helm
+#    release: gitlab
+#  annotations:
+#    kubernetes.io/ingress.provider: traefik
+#    meta.helm.sh/release-name: gitlab
+#    meta.helm.sh/release-namespace: default
+#spec:
+#  rules:
+#  - http:
+#      paths:
+#      - path: /
+#        pathType: Prefix
+#        backend:
+#          service:
+#            name: gitlab-webservice-default
+#            port:
+#              number: 8181
+#    host: samlab2.example.com
