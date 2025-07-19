@@ -13,4 +13,4 @@ spec:
             name: gitlab-webservice-default
             port:
               number: 8181
-    host: samlab.example.com
+    host: samlab2.example.com
