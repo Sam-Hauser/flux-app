@@ -18,6 +18,8 @@ spec:
     certmanager:
       install: false
     global:
+      minio:
+        enabled: false
       edition: ce
       hosts:
         domain: samlab.example.com
