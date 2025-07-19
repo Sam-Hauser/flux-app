@@ -37,10 +37,10 @@ spec:
         annotations:
           # Tell Traefik that we've configured TLS
           # NOTE: disable this if `global.ingress.tls.enabled=false`.
-          traefik.ingress.kubernetes.io/router.tls: "true"
+          traefik.ingress.kubernetes.io/router.tls: "false"
           # Ensure the HTTP Routes only listen on 443, rather than all entrypoints.
           # NOTE: set the value to `web` if `global.ingress.tls.enabled=false`.
-          traefik.ingress.kubernetes.io/router.entrypoints: websecure
+          traefik.ingress.kubernetes.io/router.entrypoints: web
       # Tell the gitlab-shell chart which traefik entrypoint to use
       # Default, present here to be explicit.
       gitlab-shell:
