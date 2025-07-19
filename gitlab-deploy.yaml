@@ -26,6 +26,8 @@ spec:
           name: samlab.example.com
           https: false
       ingress:
+        tls:
+          enabled: false
         configureCertmanager: false
         # Default, present here to be explicit.
         enabled: true
