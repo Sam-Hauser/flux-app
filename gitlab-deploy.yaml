@@ -8,15 +8,17 @@ spec:
   chart:
     spec:
       chart: gitlab/gitlab
+      version: 9.2.0
       sourceRef:
         kind: HelmRepository
         name: gitlab
-        namespace: flux-system
+        namespace: default
       interval: 10m
   values:
     certmanager:
       install: false
     global:
+      edition: ce
       hosts:
         domain: samlab.example.com
         https: false
