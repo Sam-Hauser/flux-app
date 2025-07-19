@@ -4,6 +4,7 @@ metadata:
   name: gitlab-test
   annotations:
     kubernetes.io/ingress.provider: traefik
+    meta.helm.sh/release-name: gitlab
 spec:
   rules:
   - http:
