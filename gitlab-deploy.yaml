@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: gitlab
+  name: gitlab2
   namespace: default
 spec:
   interval: 10m
@@ -20,10 +20,10 @@ spec:
     global:
       edition: ce
       hosts:
-        domain: samlab.example.com
+        domain: samlab2.example.com
         https: false
         gitlab:
-          name: samlab.example.com
+          name: samlab2.example.com
           https: false
       ingress:
         tls:
