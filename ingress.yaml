@@ -5,7 +5,7 @@ metadata:
   labels:
      app: webservice
   annotations:
-#    kubernetes.io/ingress.provider: traefik
+    external-dns.alpha.kubernetes.io/target: 192.168.1.71
 #    meta.helm.sh/release-name: gitlab
 #    meta.helm.sh/release-namespace: default
 spec:
