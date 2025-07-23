@@ -75,7 +75,7 @@ spec:
         # Switch to pihole V6 API
         - --pihole-api-version=6
         # Change this to the actual address of your Pi-hole web server
-        - --pihole-server=http://pihole
+        - --pihole-server=http://192.168.1.66
         - --log-level=debug
       securityContext:
         fsGroup: 65534 # For ExternalDNS to be able to read Kubernetes token files
